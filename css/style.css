@@ -3,6 +3,8 @@ body {
     padding: 0;
     font-family: "Merriweather", serif;
     background-color: #f8f4dd;
+    position: relative;
+    overflow: auto;
 }
 
 header {
@@ -56,8 +58,15 @@ header {
 }
 
 .nav-item a {
-    color: #a82810;
     text-decoration: none;
+}
+
+#bottom-nav .nav-item a {
+    color: #a82810;
+}
+
+.menu-nav .nav-item a {
+    color: #f8f4dd;
 }
 
 .nav-item a:hover {
@@ -70,7 +79,7 @@ header {
 
 #restaurant-description {
     text-align: center;
-    margin: 50px 0;
+    margin: 75px 0;
     height: fit-content;
 }
 
@@ -79,7 +88,7 @@ header {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #a82810;
@@ -129,4 +138,82 @@ footer {
 #contact-us address {
     font-style: normal;
     color: #f8f4dd;
+}
+
+.menu-nav {
+    padding: 5px 0;
+    height: 50px;
+}
+
+.menu-nav .logo {
+    float: left;
+    width: 50px;
+    margin-left: 30%;
+    margin-right: 25px;
+}
+
+.menu-nav .nav-bar {
+    float: left;
+}
+
+.menu-nav h1 {
+    font-size: 18pt;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.menu {
+    counter-reset: items;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 30px 4.5%;
+    width: 450px;
+    height: 500px;
+    position: relative;
+    font-size: 14pt;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: 1px solid gray;
+    counter-increment: items;
+}
+
+.menu-item-header {
+    height: 50px;
+    background-color: #a82810;
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-item-footer {
+    height: 50px;
+    width: 100%;
+    background-color: #a82810;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.menu-item-name,
+.menu-item-index {
+    float: left;
+    margin: 10px;
+}
+
+.menu-item-name {
+    font-weight: bold;
+}
+
+.menu-item-index::before {
+    content: counter(items);
+}
+
+.menu-item-price {
+    float: right;
+    margin: 10px;
+}
+
+.menu-item-img {
+    width: 450px;
+    height: 400px;
 }
