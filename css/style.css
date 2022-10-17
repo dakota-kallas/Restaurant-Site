@@ -9,7 +9,7 @@ body {
 
 header {
     position: relative;
-    background-color: #a82810;
+    background-color: #8c2e28;
     height: fit-content;
     width: 100%;
     padding-top: 5px;
@@ -62,7 +62,7 @@ header {
 }
 
 #bottom-nav .nav-item a {
-    color: #a82810;
+    color: #8c2e28;
 }
 
 .menu-nav .nav-item a {
@@ -91,7 +91,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: #a82810;
+    background-color: #8c2e28;
     height: 110px;
     padding: 15px 0;
     color: #dcceb5;
@@ -181,14 +181,14 @@ footer {
 
 .menu-item-header {
     height: 50px;
-    background-color: #a82810;
+    background-color: #8c2e28;
     border-radius: 10px 10px 0 0;
 }
 
 .menu-item-footer {
     height: 50px;
     width: 100%;
-    background-color: #a82810;
+    background-color: #8c2e28;
     position: absolute;
     bottom: 0;
     border-radius: 0 0 10px 10px;
@@ -204,12 +204,13 @@ footer {
     font-weight: bold;
 }
 
-.menu-item-index::before {
-    content: counter(items);
-}
-
 .menu-item-price {
     float: right;
+    margin: 10px;
+}
+
+.menu-item-calories {
+    float: left;
     margin: 10px;
 }
 
